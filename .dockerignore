@@ -1,0 +1,11 @@
+node_modules
+.git
+.gitignore
+.env
+.env.*
+*.log
+dist
+coverage
+.vscode
+README.md
+CONTRIBUTING.md

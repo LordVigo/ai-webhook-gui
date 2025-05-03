@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Project Configuration */
+    "composite": true,              // Enable project compilation - required for project references
+    "skipLibCheck": true,          // Skip type checking of declaration files
+    "module": "ESNext",            // Use ES Modules
+    "moduleResolution": "bundler", // Use bundler-style module resolution
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true,                // Enable all strict type checking options
+    
+    /* Build Output */
+    "outDir": "./dist",            // Output directory for compiled files
+    "rootDir": ".",                // Root directory of source files
+    
+    /* Type Checking */
+    "noImplicitAny": true,         // Raise error on expressions and declarations with an implied 'any' type
+    "strictNullChecks": true,      // Enable strict null checks
+    "strictFunctionTypes": true,   // Enable strict checking of function types
+    "strictBindCallApply": true,   // Enable strict 'bind', 'call', and 'apply' methods on functions
+    "noUnusedLocals": true,        // Report errors on unused locals
+    "noUnusedParameters": true,    // Report errors on unused parameters
+    
+    /* Module Resolution */
+    "resolveJsonModule": true,     // Allow importing JSON files as modules
+    "esModuleInterop": true,       // Enable interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in file names
+  },
+  "include": [
+    "vite.config.ts",             // Include Vite configuration file
+    "vitest.config.ts",           // Include Vitest configuration file
+    "postcss.config.cjs"          // Include PostCSS configuration file
+  ]
+}

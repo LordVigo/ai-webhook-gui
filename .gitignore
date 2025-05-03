@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/           # Node.js dependencies
+.pnpm-store/           # pnpm store directory
+.npm/                  # npm cache directory
+
+# Build outputs
+dist/                  # Production build files
+dist-ssr/             # SSR build files
+*.local               # Local-only files
+
+# Environment files
+.env                  # Local environment variables
+.env.local            # Local overrides
+.env.*.local          # Environment-specific local overrides
+.env.development      # Development environment variables
+.env.test             # Test environment variables
+.env.production       # Production environment variables
+
+# Editor directories and files
+.vscode/*             # VSCode workspace settings
+!.vscode/extensions.json  # But keep extensions recommendations
+.idea/                # IntelliJ IDEA / WebStorm
+.DS_Store             # macOS folder attributes
+*.suo                 # Visual Studio user options
+*.ntvs*               # Node.js Tools for Visual Studio
+*.njsproj             # Node.js project files
+*.sln                 # Visual Studio solution
+*.sw?                 # Vim swap files
+
+# Logs
+logs/                 # Log directory
+*.log                 # Log files
+npm-debug.log*        # npm debug logs
+yarn-debug.log*       # Yarn debug logs
+yarn-error.log*       # Yarn error logs
+pnpm-debug.log*       # pnpm debug logs
+lerna-debug.log*      # Lerna debug logs
+
+# Testing
+coverage/             # Test coverage reports
+.nyc_output/         # NYC output directory
+
+# TypeScript
+*.tsbuildinfo        # TypeScript build info
+.tscache/            # TypeScript cache
+
+# Temporary files
+.temp/               # Temporary directory
+.tmp/                # Another temporary directory
+.cache/              # Cache directory
+node_modules

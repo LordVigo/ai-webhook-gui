@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // Build output configuration
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",        // Use Node.js style module resolution
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files directly
+    "resolveJsonModule": true,         // Allow importing JSON files as modules
+    "isolatedModules": true,          // Ensure each file can be safely transpiled
+    "moduleDetection": "force",        // Force module detection
+    "noEmit": true,                   // Don't emit files (Vite handles this)
+    "jsx": "react-jsx",               // Use React JSX transform
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "esModuleInterop": true,          // Enable interoperability between CommonJS and ES Modules
+
+    /* Type Checking */
+    "strict": true,                   // Enable all strict type checking options
+    "noUnusedLocals": true,          // Report errors on unused locals
+    "noUnusedParameters": true,       // Report errors on unused parameters
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch
+    "noUncheckedIndexedAccess": true, // Add undefined to indexed access
+    "noImplicitOverride": true,       // Ensure overriding members are marked with override
+    "noPropertyAccessFromIndexSignature": true, // Require dot notation for accessing properties
+    "noUncheckedSideEffectImports": true, // Ensure imports don't have side effects
+
+    /* Path Aliases */
+    "baseUrl": ".",                   // Base directory to resolve non-relative module names
+    "paths": {
+      "@/*": ["./src/*"]             // Map '@' to './src' for cleaner imports
+    }
+  },
+  "include": ["src"],                 // Files to include in compilation
+  "references": [                     // Project references
+    { "path": "./tsconfig.node.json" }
+  ]
+}
