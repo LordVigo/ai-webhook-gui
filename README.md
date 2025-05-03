@@ -31,6 +31,49 @@ graph TD
 - pnpm (recommended) or npm
 - n8n instance with webhook nodes configured
 
+## Docker Installation
+
+The easiest way to run WebhookUI is using Docker. This method requires only Docker to be installed on your system.
+
+### Prerequisites for Docker
+- Docker Engine (or Docker Desktop for Windows/Mac)
+- Docker Compose (included in Docker Desktop)
+
+### Running with Docker
+
+1. Clone the repository:
+   ```bash
+   git clone [repository-url]
+   cd WebhookUI
+   ```
+
+2. Create environment configuration:
+   ```bash
+   cp .env.example .env
+   ```
+
+3. Update the `.env` file with your configuration:
+   ```env
+   VITE_ENCRYPTION_KEY=your-secure-encryption-key
+   ```
+
+4. Build and start the container:
+   ```bash
+   docker-compose up -d
+   ```
+
+The application will be available at `http://localhost:3000`
+
+To stop the container:
+```bash
+docker-compose down
+```
+
+To view logs:
+```bash
+docker-compose logs -f
+```
+
 ## Installation
 
 1. Clone the repository:
