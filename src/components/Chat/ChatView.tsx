@@ -163,7 +163,7 @@ const ChatView = ({ onMenuClick }: ChatViewProps) => {
               <FontAwesomeIcon icon="user" />
             </div>
             <div>
-              <div className="message-content">
+              <div className="message-content" style={{ whiteSpace: 'pre-wrap' }}>
                 {message.content}
                 {message.data && Object.entries(message.data).map(([key, fileData]) => (
                   <div key={key} className="file-container">
