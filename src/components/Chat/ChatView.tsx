@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useChatStore } from '../../store/chatStore';
 import { useThemeStore } from '../../store/themeStore';
 import { FileData } from '../../store/chatStore';
-import { faDownload, faFileImage, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faDownload, faFile } from '@fortawesome/free-solid-svg-icons';
 
 interface SelectedFile {
   name: string;

@@ -49,7 +49,7 @@ export default defineConfig({
       '/api': {
         target: 'http://127.0.0.1:3000',
         changeOrigin: true,
-        configure: (proxy, options) => {
+        configure: (_, options) => {
           // Force IPv4
           options.agent = new (require('http').Agent)({ family: 4 });
         }

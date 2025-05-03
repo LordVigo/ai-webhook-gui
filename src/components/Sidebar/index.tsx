@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useWebhookStore } from '../../store/webhookStore';
 import { useChatStore } from '../../store/chatStore';
