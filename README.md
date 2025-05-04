@@ -1,6 +1,10 @@
 # WebhookUI
 
+![Logo](/src/images/logo.png)
+
 A React-based user interface for managing and interacting with webhooks, specifically designed to work with n8n webhook nodes. Built with TypeScript, Vite, and modern web technologies.
+
+![Screenshot](/src/images/webhookGui.png)
 
 ## Features
 
