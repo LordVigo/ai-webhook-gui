@@ -5,8 +5,9 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Set up SQLite database
-const db = new sqlite3.Database('webhookui.db');
+// Set up SQLite database in the data directory for persistence
+const dbPath = path.join(__dirname, 'data', 'webhookui.db');
+const db = new sqlite3.Database(dbPath);
 
 // Create tables if they don't exist
 db.serialize(() => {
