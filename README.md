@@ -33,6 +33,7 @@ graph TD
 
 - Node.js (v16 or higher)
 - pnpm (recommended) or npm
+- alternative: Docker
 - n8n instance with webhook nodes configured
 
 ## Docker Installation
